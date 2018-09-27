@@ -27,10 +27,8 @@ library("tsne")
 ###############################################
 
 # import str file. Adjust input file name, n.ind, and n.loc for specific file/dataset.
-# datasets used in this study
-# data <- read.structure("Metano_metOnly_70_STRUCTURE_random.str", n.ind=30, n.loc=316, onerowperind=FALSE, col.lab=1, col.pop=3, col.others=NULL, row.marknames=NULL, NA.char="-9", pop=NULL, ask=FALSE, quiet=FALSE)
-# data <- read.structure("Metano_metOnly_50_STRUCTURE_random.str", n.ind=30, n.loc=1263, onerowperind=FALSE, col.lab=1, col.pop=3, col.others=NULL, row.marknames=NULL, NA.char="-9", pop=NULL, ask=FALSE, quiet=FALSE)
-# data <- read.structure("output_western_uma_121214_n60_h5_p75_editnames_2.str", n.ind=64, n.loc=597, onerowperind=FALSE, col.lab=2, col.pop=1, col.others=NULL, row.marknames=NULL, NA.char="-9", ask=FALSE, quiet=FALSE) 
+# example dataset used in this study
+# data <- read.structure("Metano_UCE_SNPs_70percent_random_structure-adegenet.str", n.ind=30, n.loc=316, onerowperind=FALSE, col.lab=1, col.pop=3, col.others=NULL, row.marknames=NULL, NA.char="-9", pop=NULL, ask=FALSE, quiet=FALSE)
 
 # data <- read.structure("input.str", n.ind=XX, n.loc=XX, onerowperind=FALSE, col.lab=1, col.pop=0, col.others=NULL, row.marknames=NULL, NA.char="-9", pop=NULL, ask=FALSE, quiet=FALSE)
 data_scaled <- scaleGen(data, center=FALSE, scale=FALSE, NA.method=c("zero"), nf)
